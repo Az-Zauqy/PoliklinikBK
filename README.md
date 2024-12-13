@@ -1,8 +1,9 @@
-PoliklinikBK Laravel Project
+#PoliklinikBK Laravel Project
 
 Proyek ini adalah sistem manajemen poliklinik yang dikembangkan menggunakan Laravel 11. Berikut adalah langkah-langkah untuk menginstal dan mengkonfigurasi proyek ini.
 
-Persyaratan Sistem
+
+#Persyaratan Sistem
 
 Pastikan sistem Anda memenuhi persyaratan berikut:
 
@@ -16,21 +17,23 @@ Node.js dan npm (untuk mengelola aset front-end)
 
 Web server seperti Apache atau Nginx
 
-Langkah Instalasi
 
-Clone Repository
+
+#Langkah Instalasi
+
+#Clone Repository
 Clone repository ini ke direktori lokal Anda:
 
 git clone https://github.com/Az-Zauqy/PoliklinikBK-A11.2021.13346.git
 cd PoliklinikBK-A11.2021.13346
 
-Install Dependencies
+#Install Dependencies
 Jalankan perintah berikut untuk menginstal semua dependensi PHP dan front-end:
 
 composer install
 npm install
 
-Konfigurasi File .env
+#Konfigurasi File .env
 
 Salin file .env.example menjadi .env:
 
@@ -56,22 +59,22 @@ Jalankan perintah berikut untuk menghasilkan application key:
 
 php artisan key:generate
 
-Migrasi Database
+#Migrasi Database
 Buat tabel di database dengan menjalankan migrasi:
 
 php artisan migrate
 
-Seed Database
+#Seed Database
 (Opsional) Isi database dengan data awal:
 
 php artisan db:seed
 
-Kompilasi Aset Front-End
+#Kompilasi Aset Front-End
 Kompilasi aset front-end dengan perintah:
 
 npm run dev
 
-Menjalankan Aplikasi
+#Menjalankan Aplikasi
 Jalankan server pengembangan Laravel:
 
 php artisan serve
