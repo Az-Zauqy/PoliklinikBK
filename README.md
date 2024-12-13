@@ -1,78 +1,94 @@
-# 🏥 PoliklinikBK - Laravel Clinic Management System
+# 🏥 PoliklinikBK - Sistem Manajemen Klinik Laravel
 
-## 📋 Project Overview
-PoliklinikBK is a comprehensive clinic management system developed using Laravel 11, designed to streamline healthcare administration and patient management.
+## 📋 Gambaran Proyek
+PoliklinikBK adalah sistem manajemen klinik komprehensif yang dikembangkan menggunakan Laravel 11, dirancang untuk mengoptimalkan administrasi kesehatan dan manajemen pasien.
 
-## 🖥️ System Requirements
+## 🖥️ Persyaratan Sistem
 
-### Prerequisites
+### Prasyarat
 - **PHP** `8.1+`
 - **Composer** 
 - **MySQL/MariaDB**
 - **Node.js & npm**
 - **Web Server** (Apache/Nginx)
 
-## 🚀 Installation Guide
+## 🚀 Panduan Instalasi
 
-### 1. Clone the Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/Az-Zauqy/PoliklinikBK.git
 cd PoliklinikBK
 ```
 
-### 2. Install Dependencies
+### 2. Instal Dependensi
 ```bash
-# Install PHP dependencies
+# Instal dependensi PHP
 composer install
 
-# Install front-end dependencies
+# Instal dependensi front-end
 npm install
 ```
 
-### 3. Environment Configuration
-Copy the environment file and generate application key:
+### 3. Konfigurasi Lingkungan
+Salin file environment dan hasilkan kunci aplikasi:
 ```bash
-# Create .env file
+# Buat file .env
 cp .env.example .env
 
-# Generate application key
+# Hasilkan kunci aplikasi
 php artisan key:generate
 ```
 
-### 4. Database Setup
-Edit `.env` file with your database credentials:
+### 4. Pengaturan Database
+Edit file `.env` dengan kredensial database Anda:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=poli
 DB_USERNAME=root
-DB_PASSWORD=yourpassword
+DB_PASSWORD=passwordanda
 ```
 
-### 5. Database Migration
+### 5. Migrasi dan Impor Database
+Anda memiliki dua pilihan untuk menyiapkan database:
+
+#### Pilihan 1: Gunakan Migrasi Laravel
 ```bash
-# Run database migrations
+# Jalankan migrasi database
 php artisan migrate
 
-# (Optional) Seed initial data
+# (Opsional) Isi data awal
 php artisan db:seed
 ```
 
-### 6. Compile Front-End Assets
+#### Pilihan 2: Impor File SQL
+Jika file SQL disediakan dalam repository:
+1. Buat database:
 ```bash
-# Compile assets
+mysql -u root -p
+CREATE DATABASE poli;
+exit;
+```
+
+2. Impor file SQL:
+```bash
+mysql -u root -p poli < path/ke/database.sql
+```
+
+### 6. Kompilasi Aset Front-End
+```bash
+# Kompilasi aset
 npm run dev
 ```
 
-### 7. Launch Application
+### 7. Jalankan Aplikasi
 ```bash
-# Start development server
+# Jalankan server pengembangan
 php artisan serve
 ```
 
-🌐 Access the application at: `http://localhost:8000`
-
+🌐 Akses aplikasi di: `http://localhost:8000`
 
 ---
 
