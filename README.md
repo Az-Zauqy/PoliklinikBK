@@ -16,8 +16,8 @@ PoliklinikBK is a comprehensive clinic management system developed using Laravel
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Az-Zauqy/PoliklinikBK-A11.2021.13346.git
-cd PoliklinikBK-A11.2021.13346
+git clone https://github.com/Az-Zauqy/PoliklinikBK.git
+cd PoliklinikBK
 ```
 
 ### 2. Install Dependencies
@@ -45,7 +45,7 @@ Edit `.env` file with your database credentials:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=poliklinik
+DB_DATABASE=poli
 DB_USERNAME=root
 DB_PASSWORD=yourpassword
 ```
