@@ -1,83 +1,79 @@
-#PoliklinikBK Laravel Project
+# 🏥 PoliklinikBK - Laravel Clinic Management System
 
-Proyek ini adalah sistem manajemen poliklinik yang dikembangkan menggunakan Laravel 11. Berikut adalah langkah-langkah untuk menginstal dan mengkonfigurasi proyek ini.
+## 📋 Project Overview
+PoliklinikBK is a comprehensive clinic management system developed using Laravel 11, designed to streamline healthcare administration and patient management.
 
+## 🖥️ System Requirements
 
-#Persyaratan Sistem
+### Prerequisites
+- **PHP** `8.1+`
+- **Composer** 
+- **MySQL/MariaDB**
+- **Node.js & npm**
+- **Web Server** (Apache/Nginx)
 
-Pastikan sistem Anda memenuhi persyaratan berikut:
+## 🚀 Installation Guide
 
-PHP 8.1 atau lebih baru
-
-Composer
-
-MySQL atau MariaDB
-
-Node.js dan npm (untuk mengelola aset front-end)
-
-Web server seperti Apache atau Nginx
-
-
-
-#Langkah Instalasi
-
-#Clone Repository
-Clone repository ini ke direktori lokal Anda:
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/Az-Zauqy/PoliklinikBK-A11.2021.13346.git
 cd PoliklinikBK-A11.2021.13346
+```
 
-#Install Dependencies
-Jalankan perintah berikut untuk menginstal semua dependensi PHP dan front-end:
-
+### 2. Install Dependencies
+```bash
+# Install PHP dependencies
 composer install
+
+# Install front-end dependencies
 npm install
+```
 
-#Konfigurasi File .env
-
-Salin file .env.example menjadi .env:
-
+### 3. Environment Configuration
+Copy the environment file and generate application key:
+```bash
+# Create .env file
 cp .env.example .env
 
-Buka file .env dan sesuaikan konfigurasi berikut:
+# Generate application key
+php artisan key:generate
+```
 
-APP_NAME=PoliklinikBK
-APP_ENV=local
-APP_KEY=base64:generate-with-command-below
-APP_DEBUG=true
-APP_URL=http://localhost
-
+### 4. Database Setup
+Edit `.env` file with your database credentials:
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=poliklinik
 DB_USERNAME=root
 DB_PASSWORD=yourpassword
+```
 
-Generate Application Key
-Jalankan perintah berikut untuk menghasilkan application key:
-
-php artisan key:generate
-
-#Migrasi Database
-Buat tabel di database dengan menjalankan migrasi:
-
+### 5. Database Migration
+```bash
+# Run database migrations
 php artisan migrate
 
-#Seed Database
-(Opsional) Isi database dengan data awal:
-
+# (Optional) Seed initial data
 php artisan db:seed
+```
 
-#Kompilasi Aset Front-End
-Kompilasi aset front-end dengan perintah:
-
+### 6. Compile Front-End Assets
+```bash
+# Compile assets
 npm run dev
+```
 
-#Menjalankan Aplikasi
-Jalankan server pengembangan Laravel:
-
+### 7. Launch Application
+```bash
+# Start development server
 php artisan serve
+```
 
-Akses aplikasi di browser Anda: http://localhost:8000
+🌐 Access the application at: `http://localhost:8000`
 
+
+---
+
+**Developed by Az-Zauqy** 🚀
